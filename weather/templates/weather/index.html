@@ -10,7 +10,8 @@
     <div class="weather-card">
         <h1>Weather App</h1>
         
-        <form method="GET">
+        <form method="POST">
+            {% csrf_token %}
             <input type="text" name="city" placeholder="Enter city...">
             <button type="submit">Search</button>
         </form>
