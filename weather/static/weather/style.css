@@ -1,0 +1,54 @@
+/* The 'body' is the entire page container */
+body {
+    background-color: #e9ecef; /* A soft, light grey */
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* The 'weather-card' is our main UI element */
+.weather-card {
+    background-color: #ffffff; /* White card to pop against the grey background */
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05); /* Soft shadow for depth */
+    text-align: center;
+    border-top: 10px solid #3498db; /* The "Blue" accent stripe */
+    width: 350px;
+}
+
+/* Style for the city input box */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #bdc3c7; /* Light grey border */
+    border-radius: 5px;
+    outline: none;
+    width: 60%;
+}
+
+/* Style for the search button */
+button {
+    padding: 10px 15px;
+    background-color: #3498db; /* Matching Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Adding this to your .weather-card styles */
+.temp {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #2980b9; /* A slightly deeper blue for contrast */
+    margin: 10px 0;
+}
+
+.result p {
+    color: #7f8c8d; /* A sophisticated grey for the description */
+    font-weight: 500;
+    text-transform: capitalize; /* Another way to capitalize text! */
+}
