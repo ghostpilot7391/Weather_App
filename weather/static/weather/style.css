@@ -12,12 +12,16 @@ body {
 /* The 'weather-card' is our main UI element */
 .weather-card {
     background-color: #ffffff; /* White card to pop against the grey background */
-    padding: 2.5rem;
+    /*padding: 2.5rem;*/
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.05); /* Soft shadow for depth */
     text-align: center;
     border-top: 10px solid #3498db; /* The "Blue" accent stripe */
-    width: 350px;
+    width: 90%;
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+
 }
 
 /* Style for the city input box */
@@ -51,4 +55,14 @@ button {
     color: #7f8c8d; /* A sophisticated grey for the description */
     font-weight: 500;
     text-transform: capitalize; /* Another way to capitalize text! */
+}
+
+@media (max-width: 480px) {
+    .temp {
+        font-size: 3rem; /* Makes text a bit smaller on tiny phones */
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
 }
