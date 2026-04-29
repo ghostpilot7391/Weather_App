@@ -21,7 +21,7 @@
             {% if icon %}
             <img src="http://openweathermap.org/img/wn/{{ icon }}@2x.png" alt="weather icon">
             {% endif %}
-            <p class="temp">{{ temp|floatformat:0 }}°C / {{ temp_f|floatformat:0 }}°F </p>
+            <p class="temp">{{ temp_c|floatformat:0 }}°C / {{ temp_f|floatformat:0 }}°F </p>
             <p>{{ desc }} in {{ city }}</p>
         </div>
         {% endif %}

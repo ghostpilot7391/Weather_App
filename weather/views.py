@@ -18,7 +18,8 @@ def index(request):
             temp_f = (temp_c * 9/5) + 32 # The conversion formula
             context = {
                 'city': response['name'],
-                'temp': response['main']['temp'],
+                'temp_c': temp_c,      # Use this name
+                'temp_f': temp_f,      # ADD THIS LINE
                 'desc': response['weather'][0]['description'],
                 'icon': response['weather'][0]['icon'],
             }
