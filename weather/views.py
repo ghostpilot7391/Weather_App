@@ -14,6 +14,8 @@ def index(request):
         response = requests.get(url).json()
 
         if response.get('cod') == 200:
+            temp_c = response['main']['temp']
+            temp_f = (temp_c * 9/5) + 32 # The conversion formula
             context = {
                 'city': response['name'],
                 'temp': response['main']['temp'],
