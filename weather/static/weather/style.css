@@ -18,7 +18,7 @@ body {
     text-align: center;
     border-top: 10px solid #3498db; /* The "Blue" accent stripe */
     width: 90%;
-    max-width: 450px;
+    /*max-width: 450px;*/
     margin: 20px auto;
     padding: 20px;
 
