@@ -57,7 +57,7 @@ button {
     text-transform: capitalize; /* Another way to capitalize text! */
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
     .temp {
         font-size: 3rem; /* Makes text a bit smaller on tiny phones */
     }
